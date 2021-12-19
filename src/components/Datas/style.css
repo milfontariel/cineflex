@@ -1,0 +1,58 @@
+.datas {
+  width: 100%;
+  margin-bottom: 120px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 5vw;
+}
+
+.horarios {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #e8833a;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.data {
+  font-size: 20px;
+}
+
+.rodape {
+  height: 100px;
+  width: 100%;
+  background-color: #dfe6ed;
+  border-top: 1px solid #9eadba;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.miniatura-filme {
+  max-height: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.miniatura-filme img {
+  height: 100%;
+}
+.info {
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
