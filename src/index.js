@@ -4,7 +4,8 @@ import './reset.css';
 import './style.css';
 import Header from './components/Header';
 import Catalogo from "./components/Catalogo/Catalogo";
-import Datas from "./components/Datas/Datas";
+import Filme from "./components/Datas/Filme";
+import Sessao from "./components/Sessao";
 import { useState } from "react";
 
 function App(){
@@ -15,7 +16,8 @@ function App(){
       <Header />
       <Routes>
         <Route path="/" element={<Catalogo setIdFilme={setIdFilme}/>}></Route>
-        <Route path="/datas" element={<Datas id={idFilme}/>}></Route>
+        <Route path="/filme/:idFilme" element={<Filme />}></Route>
+        <Route path="/sessao/:idSessao" element={<Sessao />}></Route>
       </Routes>
     </BrowserRouter>
   )
