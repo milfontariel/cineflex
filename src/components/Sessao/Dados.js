@@ -35,6 +35,8 @@ export default function Dados({ selecionados, idSelecionados, info, setDadosSuce
 
     const [btnTexto, setBtnTexto] = useState('Reservar assento(s)');
 
+    console.log(selecionados);
+
     return (
         <Inputs>
             <Lista>
@@ -62,6 +64,7 @@ export default function Dados({ selecionados, idSelecionados, info, setDadosSuce
                                 name: nome,
                                 cpf: cpf
                             }
+                            setDadosSucesso(undefined);
                             const promessa = axios.post('https://mock-api.driven.com.br/api/v4/cineflex/seats/book-many', dados);
                             promessa.then(() => {
                                 validaCpf = false;
@@ -75,6 +78,7 @@ export default function Dados({ selecionados, idSelecionados, info, setDadosSuce
                                     nome: nome,
                                     cpf: cpf
                                 };
+                                console.log(`dados? `, dadinhos);
                                 setDadosSucesso(dadinhos);
                             });
                         }

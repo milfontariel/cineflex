@@ -20,7 +20,8 @@ function App(){
         <Route path="/" element={<Catalogo setIdFilme={setIdFilme}/>}></Route>
         <Route path="/filme/:idFilme" element={<Filme />}></Route>
         <Route path="/sessao/:idSessao" element={<Sessao setDadosSucesso={setDadosSucesso}/>}></Route>
-        <Route path="/sucesso" element={<Sucesso dadosSucesso={dadosSucesso}/>}></Route>
+        <Route path="/sucesso" element={<Sucesso dadosSucesso={dadosSucesso} 
+        setDadosSucesso={setDadosSucesso}/>}></Route>
       </Routes>
     </BrowserRouter>
   )
