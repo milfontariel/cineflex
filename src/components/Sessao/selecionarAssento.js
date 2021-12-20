@@ -1,17 +1,21 @@
-export default function selecionarAssento({ target }, { name, isAvailable }, selecionados, setSelecionados) {
-        
-    if (!selecionados.includes(name) && isAvailable) {
+export default function selecionarAssento({ target }, { id, name, isAvailable },
+    selecionados, setSelecionados, idSelecionados, setIdSelecionados) {
 
+    if (!selecionados.includes(name) && isAvailable) {
         target.classList.add(`selecionado`);
         setSelecionados([...selecionados, name]);
+        setIdSelecionados([...idSelecionados, id]);
 
-    } else if(selecionados.includes(name)) {
+    } else if (selecionados.includes(name)) {
 
         target.classList.remove(`selecionado`);
         const index = selecionados.indexOf(name);
-        let array = selecionados;
-        array.splice(index, 1);
-        setSelecionados(array);
+        let arrayName = selecionados;
+        let arrayId = idSelecionados;
+        arrayName.splice(index, 1);
+        arrayId.splice(index, 1);
+        setSelecionados(arrayName);
+        setIdSelecionados(arrayId);
 
     }
 }

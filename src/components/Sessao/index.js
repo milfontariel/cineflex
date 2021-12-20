@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function Sessao() {
+export default function Sessao({setDadosSucesso}) {
     const { idSessao } = useParams();
     const [infoSessao, setInfoSessao] = useState(null);
 
@@ -32,7 +32,7 @@ export default function Sessao() {
     return (
         <>
             <Selecionar texto={`(s) assento(s)`} />
-            <Assentos info={infoSessao}></Assentos>
+            <Assentos info={infoSessao} setDadosSucesso={setDadosSucesso}></Assentos>
             <Rodape info={infoSessao}></Rodape>
         </>
     )
