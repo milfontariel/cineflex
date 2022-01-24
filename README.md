@@ -3,7 +3,7 @@
 <br/>
 
 
-<img width='100%' src='https://i.ibb.co/4p9jX0s/cineflex.png' alt='cineflex'>
+<img width='100%' src='https://i.ibb.co/QpTHSY6/cineflex.png' alt='cineflex'>
 
 
 <br/>
