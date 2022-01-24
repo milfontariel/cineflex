@@ -10,7 +10,7 @@
 
 ## To run this project remotely:
 ### `follow this link:` 
-[TrackIt](https://milfont.dev/cineflex)
+[CineFlex](https://milfont.dev/cineflex)
 
 ## To run this project locally:
 After git clone, in terminal:
